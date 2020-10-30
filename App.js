@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 
+import MealsNavigator from "./navigation/MealsNavigator";
+
 const fetchFonts = () => {
   return Font.loadAsync({
     "dosis-light": require("./assets/fonts/Dosis-Light.ttf"),
@@ -23,11 +25,7 @@ export default function App() {
     );
   }
   return (
-    <View style={styles.container}>
-      <Text style={styles.font}>
-        OPEN UP App.js to start working on your app!
-      </Text>
-    </View>
+    <MealsNavigator />
   );
 }
 
@@ -40,6 +38,6 @@ const styles = StyleSheet.create({
   },
   font: {
     fontFamily: "dosis-regular",
-    fontSize: 18
+    fontSize: 18,
   },
 });
