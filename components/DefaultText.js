@@ -8,7 +8,7 @@ const DefaultText = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontFamily: "dosis-regular",
-    fontSize: 15,
+    fontSize: 17,
   },
 });
 
